@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import Index from './pages/index';
+import './assets/styles/grid.css'
 import styles from './App.css'
 
 class App extends Component {
@@ -10,11 +11,13 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <div className={styles.header}>
-            <Link to="/index"> 首页 </Link>
-            <Link to="/marryme"> 结婚页 </Link>
-            <Link to="/abc1"> 小呆专区 </Link>
-            <Link to="/abc2"> 瓜哥专区 </Link>
-            <Link to="/about"> 关于我们 </Link>
+            <div className={styles.headerLinks}>
+              <Link to="/index"> 首页 </Link>
+              <Link to="/marryme"> 结婚页 </Link>
+              <Link to="/abc1"> 小呆专区 </Link>
+              <Link to="/abc2"> 瓜哥专区 </Link>
+              <Link to="/about"> 关于我们 </Link>
+            </div>
           </div>
           <Route path="/index" component={Index} />
         </div>
