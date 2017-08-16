@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import Index from './pages/index';
-import styles from './App.less'
-//import './App.css'
+import styles from './App.css'
 
 class App extends Component {
   render() {
