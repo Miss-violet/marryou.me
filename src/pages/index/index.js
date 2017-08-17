@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import Logo from '../../components/logo'
 
-import Tag from './tag.js'
-import Acticle from './acticle.js'
-import Author from './author.js'
-
 import styles from './index.css'
+
+import Tag from './tag'
+import Acticle from './acticle'
+import Author from './author'
+
 
 class Header extends Component {
   render() {

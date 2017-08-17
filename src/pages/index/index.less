@@ -1,4 +1,22 @@
 @import '../../assets/styles/grid.less';
+.wrap {
+    background-color: #fff;
+    border: 2px solid #c3c4c9;
+    position: relative;
+}
+
+.title {
+    @height: 36px;
+    background-color: #ad2b50;
+    color: #fff;
+    font-size: 16px;
+    height: @height;
+    line-height: @height;
+    margin: -18px auto 0;
+    text-align: center;
+    width: 103px;
+}
+
 .indexWrap {
     .container;
     display: flex;
@@ -19,24 +37,6 @@
     }
 }
 
-.wrap {
-    background-color: #fff;
-    border: 2px solid #c3c4c9;
-    position: relative;
-}
-
-.title {
-    @height: 36px;
-    background-color: #ad2b50;
-    color: #fff;
-    font-size: 16px;
-    height: @height;
-    line-height: @height;
-    margin: -18px auto 0;
-    text-align: center;
-    width: 103px;
-}
-
-@import './tag.less';
-@import './acticle.less';
-@import './author.less';
+@import './tag/index.less';
+@import './acticle/index.less';
+@import './author/index.less';
