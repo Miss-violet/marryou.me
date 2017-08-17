@@ -1,0 +1,42 @@
+@import '../../assets/styles/grid.less';
+.indexWrap {
+    .container;
+    display: flex;
+    width: 1356px;
+    .tagWrap,
+    .acticleWrap,
+    .author {
+        .wrap;
+    }
+    .tagWrap {
+        .col-4;
+    }
+    .authorWrap {
+        .col-4;
+    }
+    .acticleWrap {
+        .col-16;
+    }
+}
+
+.wrap {
+    background-color: #fff;
+    border: 2px solid #c3c4c9;
+    position: relative;
+}
+
+.title {
+    @height: 36px;
+    background-color: #ad2b50;
+    color: #fff;
+    font-size: 16px;
+    height: @height;
+    line-height: @height;
+    margin: -18px auto 0;
+    text-align: center;
+    width: 103px;
+}
+
+@import './tag.less';
+@import './acticle.less';
+@import './author.less';
