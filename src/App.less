@@ -2,5 +2,70 @@
 .header {
     background-color: #f8f8f6;
     height: 48px;
+    position: relative;
     width: 100%;
+    &:after {
+        background-color: #ededeb;
+        content: '';
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+    .linksWrap {
+        .container;
+        position: relative;
+        width: 1356px;
+    }
+    .links {
+        .container;
+        .col-12;
+        background-color: #f8f8f6;
+        line-height: 48px;
+        position: relative;
+        z-index: 1;
+        .link {
+            .col-4;
+            display: inline-block;
+            flex-direction: row;
+            font-size: 16px;
+            text-align: center;
+        }
+        .crtLink {
+            color: #ad2b50;
+            font-weight: bold;
+        }
+    }
+    .flag {
+        background-color: #fad7e0;
+        color: #fff;
+        font-family: 'Monotype Corsiva', 'Microsoft YaHei';
+        font-size: 24px;
+        min-height: 160px;
+        padding-bottom: 40px;
+        position: absolute;
+        right: 0;
+        top: 26px;
+        width: 46px;
+        &:after {
+            background-color: #fff;
+            bottom: -15px;
+            content: '';
+            height: 32px;
+            left: 7px;
+            transform: rotate(45deg);
+            position: absolute;
+            width: 32px;
+        }
+        .flagText {
+            height: 36px;
+            left: -37px;
+            line-height: 36px;
+            margin: 0 5px;
+            min-width: 110px;
+            position: absolute;
+            top: 48px;
+            transform: rotate(90deg);
+        }
+    }
 }
