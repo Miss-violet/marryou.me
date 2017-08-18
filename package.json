@@ -37,6 +37,7 @@
     "react-dom": "^15.6.1",
     "react-error-overlay": "^1.0.10",
     "react-router-dom": "^4.1.2",
+    "react-snapshot": "^2.0.0-1",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "0.5.9",
@@ -48,9 +49,9 @@
   "scripts": {
     "build-css": "node-less-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-less-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-    "start-js": "node scripts/start.js",
-    "dev": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && node scripts/build.js",
+    "start-js": "node scripts/start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build && react-snapshot",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
