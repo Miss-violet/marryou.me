@@ -1,4 +1,32 @@
 .tagWrap {
     margin-right: 10px;
     min-height: 554px;
+    .title {
+        margin-bottom: 20px;
+    }
+    .tagCnt {
+        margin-left: 20px;
+        margin-top: 16px;
+        .classifyTitle {
+            color: #171b36;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .classifyCnt {
+            margin-left: 15px;
+        }
+        .tag {
+            font-size: 12px;
+            line-height: 1.5;
+            &:before {
+                content: '-';
+                right: 5px;
+                position: relative;
+            }
+            &:hover {
+                color: #ad2b50;
+                text-decoration: underline;
+            }
+        }
+    }
 }

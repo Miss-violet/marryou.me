@@ -9,7 +9,32 @@ class Tag extends Component {
                 <div className={styles.title}>
                     标签
                 </div>
-                tag
+                <div className={styles.tagCnt}>
+                    <div className={styles.classifyTitle}>
+                        后端相关
+                    </div>
+                    <div className={styles.classifyCnt}>
+                        <div className={styles.tag}>
+                            HTML
+                        </div>
+                        <div className={styles.tag}>
+                            CSS
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.tagCnt}>
+                    <div className={styles.classifyTitle}>
+                        后端相关
+                    </div>
+                    <div className={styles.classifyCnt}>
+                        <div className={styles.tag}>
+                            HTML
+                        </div>
+                        <div className={styles.tag}>
+                            CSS
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
