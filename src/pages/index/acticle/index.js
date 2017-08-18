@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+import Search from './search'
+import ActileList from './acticleList'
+
 import styles from '../index.css'
 
 class Acticle extends Component {
@@ -14,6 +17,8 @@ class Acticle extends Component {
                         最热
                     </div>
                 </div>
+                <Search />
+                <ActileList />
             </div>
         )
     }
