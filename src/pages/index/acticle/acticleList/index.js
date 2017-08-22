@@ -7,7 +7,7 @@ import acticleListStyle from './index.css'
 class ActicleList extends Component {
     render() {
         return (
-            <div className={acticleListStyle.acticleList}>
+            <div className={acticleListStyle.acticleList} >
                 <ActicleItem />
             </div>
         )

@@ -215,7 +215,10 @@ module.exports = {
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
             },
-          },
+          }, {
+            test: /\.(woff|svg|eot|ttf)\??.*$/,
+            loader: 'url-loader?name=fonts/[name].[md5:hash:hex:7].[ext]',
+          }
         ],
       },
       // ** STOP ** Are you adding a new loader?
