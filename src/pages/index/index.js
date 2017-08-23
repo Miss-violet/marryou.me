@@ -8,7 +8,7 @@ import Acticle from './acticle'
 import Author from './author'
 
 
-class Header extends Component {
+class Index extends Component {
   render() {
     return (
       <div>
@@ -23,4 +23,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Index;
