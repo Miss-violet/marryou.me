@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import Index from './pages/index';
+import Marryme from './pages/marryme'
+
 import './assets/styles/grid.css'
 import styles from './App.css'
 
@@ -26,6 +28,7 @@ class App extends Component {
             </div>
           </div>
           <Route path="/index" component={Index} />
+          <Route path="/marryme" component={Marryme} />
         </div>
       </BrowserRouter>
     );

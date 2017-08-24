@@ -1,0 +1,83 @@
+.toolsWrap {
+    position: fixed;
+    bottom: 100px;
+    left: 83.333333%;
+    .icon {
+        @size: 46px;
+        border: 1px solid #ededeb;
+        cursor: pointer;
+        height: @size;
+        margin-bottom: 30px;
+        position: relative;
+        width: @size;
+        .showCircle {
+            @size: 8px;
+            background-color: #ededeb;
+            border-radius: 5px;
+            display: inline-block;
+            height: @size;
+            margin-top: 88%;
+            width: @size;
+            &:before {
+                border-bottom: 2px solid #ededeb;
+                content: '';
+                margin-top: 3px;
+                right: 10px;
+                position: absolute;
+                width: 18px;
+            }
+        }
+    }
+    .showFm {
+        left: -10px;
+        position: absolute;
+        top: 13px;
+    }
+    .showMenu {
+        display: flex;
+        flex-direction: row-reverse;
+        left: -100px;
+        position: absolute;
+        top: -68px;
+    }
+    .menuItems {
+        margin-right: 20px;
+        padding-right: 10px;
+        &:after {
+            border-right: 2px solid #ededeb;
+            content: '';
+            height: 80%;
+            right: 30px;
+            position: absolute;
+            top: 18px;
+        }
+        .menuItem {
+            @height: 44px;
+            display: flex;
+            flex-direction: row-reverse;
+            height: @height;
+            line-height: @height;
+            text-align: right;
+            &:hover {
+                color: #ad2b50;
+                text-decoration: underline;
+            }
+        }
+        .itemCircle {
+            @size: 8px;
+            background-color: #ccccca;
+            border-radius: 5px;
+            display: inline-block;
+            height: @size;
+            margin-left: 4px;
+            margin-top: 32%;
+            width: @size;
+        }
+        .crtItem {
+            color: #ad2b50;
+            .itemCircle {
+                background-color: #ad2b50;
+            }
+        }
+    }
+}
