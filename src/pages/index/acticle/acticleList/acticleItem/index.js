@@ -30,7 +30,7 @@ class ActicleItem extends Component {
                     return (
                         <div key={i} className={acticleItemStyle.acticleItem}>
                             <div className={acticleItemStyle.imgWrap}>
-                                <img src='' className={acticleItemStyle.img} />
+                                <img src='' className={acticleItemStyle.img} alt='' />
                             </div>
                             <div className={acticleItemStyle.acticleInfo}>
                                 <a href="" className={acticleItemStyle.acticleTitle}>

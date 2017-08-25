@@ -2,16 +2,18 @@ import React, { Component } from 'react'
 import classnames from 'classnames'
 
 import toolsStyles from './styles/index.css'
+import iconFont from '../../../assets/styles/iconfont/style.css'
 
 class Tools extends Component {
     constructor() {
         super()
         this.state = {
-            showFm: true,            // 是否展开登记表单
+            showFm: false,            // 是否展开登记表单
             showMenu: false,         // 是否展开菜单内容
         }
     }
     render() {
+        /* 菜单选中样式（先写死） */
         const gardenStyle = classnames({
             [toolsStyles.menuItem]: true,
             [toolsStyles.crtItem]: true,
@@ -29,16 +31,30 @@ class Tools extends Component {
             [toolsStyles.crtItem]: false,
         })
 
+        /* 右下角图标样式 */
+        const fmIcon = classnames({
+            [iconFont.icon_edit]: true,
+            [toolsStyles.editIcon]: true,
+        })
+        const menuIcon = classnames({
+            [iconFont.icon_menu]: true,
+            [toolsStyles.menuIcon]: true,
+        })
+        const topIcon = classnames({
+            [iconFont.icon_top]: true,
+            [toolsStyles.topIcon]: true,
+        })
+
         return (
             <div className={toolsStyles.toolsWrap}>
                 <div className={toolsStyles.icon}>
-                    <div className={toolsStyles.fm}></div>
+                    <div className={fmIcon}></div>
                     {
                         this.state.showFm &&
                         <div className={toolsStyles.showFm}>
                             <span className={toolsStyles.showCircle}></span>
-                            <form className={toolsStyles.fm}>
-                                <h6>加入我们？</h6>
+                            <form className={toolsStyles.editFm}>
+                                <h6 className={toolsStyles.title}>加入我们？</h6>
                                 <div className={toolsStyles.fmItem}>
                                     <label htmlFor="name" className={toolsStyles.label}>
                                         姓名
@@ -63,14 +79,14 @@ class Tools extends Component {
                                         className={toolsStyles.submitBtn}
                                         >
                                         你们这么美，我一定参加啦 ~
-                            </button>
+                                    </button>
                                 </div>
                             </form>
                         </div>
                     }
                 </div>
                 <div className={toolsStyles.icon}>
-                    <div className={toolsStyles.menu}></div>
+                    <div className={menuIcon}></div>
                     {
                         this.state.showMenu &&
                         <div className={toolsStyles.showMenu}>
@@ -93,7 +109,7 @@ class Tools extends Component {
                     }
                 </div>
                 <div className={toolsStyles.icon}>
-                    <div className={toolsStyles.top}></div>
+                    <div className={topIcon}></div>
                 </div>
             </div>
         )

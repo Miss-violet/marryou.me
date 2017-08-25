@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import classnames from 'classnames'
 
 import img_pic1 from './img/B0003903.jpg'
 import img_pic2 from './img/B0003907.jpg'
@@ -11,10 +12,16 @@ import picListStyles from './styles/index.css'
 
 class PicList extends Component {
     render() {
+        const moreStyle = classnames({
+            'icon-more': true,
+            [picListStyles.moreIcon]: true,
+        })
         return (
             <div className={picListStyles.picWrap}>
                 <div className={picListStyles.axis}>
+                    <div className={moreStyle}></div>
                     <div className={picListStyles.more}>
+                        <div className={moreStyle}></div>
                         加载更多
                     </div>
                 </div>

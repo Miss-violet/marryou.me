@@ -1,32 +1,54 @@
 @import "variables";
+
 @font-face {
-    font-family: 'icomoon';
-    src: url('@{icomoon-font-path}/icomoon.eot?jjnzi6');
-    src: url('@{icomoon-font-path}/icomoon.eot?jjnzi6#iefix') format('embedded-opentype'),
-    url('@{icomoon-font-path}/icomoon.ttf?jjnzi6') format('truetype'),
-    url('@{icomoon-font-path}/icomoon.woff?jjnzi6') format('woff'),
-    url('@{icomoon-font-path}/icomoon.svg?jjnzi6#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'icomoon';
+  src:  url('@{icomoon-font-path}/icomoon.eot?np95g2');
+  src:  url('@{icomoon-font-path}/icomoon.eot?np95g2#iefix') format('embedded-opentype'),
+    url('@{icomoon-font-path}/icomoon.ttf?np95g2') format('truetype'),
+    url('@{icomoon-font-path}/icomoon.woff?np95g2') format('woff'),
+    url('@{icomoon-font-path}/icomoon.svg?np95g2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+[class^="icon_"], [class*=" icon_"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-search {
-    &:before {
-        content: @icon-search;
-    }
+.icon_edit {
+  &:before {
+    content: @icon_edit;
+  }
 }
+.icon_menu {
+  &:before {
+    content: @icon_menu;
+  }
+}
+.icon_more {
+  &:before {
+    content: @icon_more;
+  }
+}
+.icon_top {
+  &:before {
+    content: @icon_top;
+  }
+}
+.icon_search {
+  &:before {
+    content: @icon_search;
+  }
+}
+
