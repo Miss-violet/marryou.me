@@ -9,11 +9,13 @@ import img_pic4 from './img/B0003917.jpg'
 
 
 import picListStyles from './styles/index.css'
+import iconFont from '../../../assets/styles/iconfont/style.css'
+
 
 class PicList extends Component {
     render() {
         const moreStyle = classnames({
-            'icon-more': true,
+            [iconFont.icon_more]: true,
             [picListStyles.moreIcon]: true,
         })
         return (

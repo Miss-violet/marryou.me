@@ -18,10 +18,18 @@
         height: 100%;
         left: 50%;
         position: absolute;
+        top: 0;
         width: 1px;
     }
     .moreIcon {
-        margin: 0 auto;
+        background-color: #f8f8f6;
+        font-size: 18px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        padding-left: 12px;
+        position: relative;
+        z-index: 1;
     }
     .more {
         background-color: #ededeb;
@@ -35,7 +43,11 @@
         width: 100%;
         &:hover {
             color: #ad2b50;
-            text-decoration: underline;
+        }
+        .moreIcon {
+            background: none;
+            margin-top: 10px;
+            padding-left: 0;
         }
     }
 }

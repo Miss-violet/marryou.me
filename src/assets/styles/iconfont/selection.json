@@ -222,7 +222,7 @@
       "showMetrics": false,
       "showMetadata": false,
       "showVersion": false,
-      "cssVars": true,
+      "cssVars": false,
       "cssVarsFormat": "less"
     },
     "imagePref": {
