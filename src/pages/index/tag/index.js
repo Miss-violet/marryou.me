@@ -13,7 +13,6 @@ class Tag extends Component {
             [styles.tagWrap]: true,
             [tagStyles.tagWrap]: true
         })
-
         return (
             <div className={tagWrap}>
                 <div className={styles.title}>
