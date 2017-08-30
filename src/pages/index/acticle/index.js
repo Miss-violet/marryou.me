@@ -29,6 +29,7 @@ class Acticle extends Component {
         }
     }
     render() {
+        /* 样式组合 */
         const recent = classnames({
             [acticleStyles.title]: true,
             [acticleStyles.negative]: !this.state.sortRecent,
@@ -48,7 +49,7 @@ class Acticle extends Component {
                     </div>
                 </div>
                 <Search />
-                <ActileList />
+                <ActileList {...this.props} />
                 <a href='' className={acticleStyles.more}> 查看最近更多文章 </a>
             </div>
         )

@@ -4,25 +4,15 @@ import acticleItemStyle from './index.css'
 
 class ActicleItem extends Component {
     static defaultProps = {
-        acticles: []
+        //acticles: []
     }
     render() {
-        const acticles = [
-            {
-                imgUrl: '1xxxxxx',
-                title: '1xxxx',
-                author: '1',
-                time: '1.xxxx',
-                cnt: '1xxxxxxxxxxxxxx',
-            },
-            {
-                imgUrl: '2xxxxxx',
-                title: '2xxxx',
-                author: '2',
-                time: '2.xxxx',
-                cnt: '2xxxxxxxxxxxxxx',
-            }
-        ]
+
+        let acticleProps = this.props,
+            acticles = []
+        for (let i in acticleProps) {
+            acticles.push(acticleProps[i])
+        }
 
         return (
             <div>
@@ -30,7 +20,7 @@ class ActicleItem extends Component {
                     return (
                         <div key={i} className={acticleItemStyle.acticleItem}>
                             <div className={acticleItemStyle.imgWrap}>
-                                <img src='' className={acticleItemStyle.img} alt='' />
+                                <img src={items.imgUrl} className={acticleItemStyle.img} alt='' />
                             </div>
                             <div className={acticleItemStyle.acticleInfo}>
                                 <a href="" className={acticleItemStyle.acticleTitle}>
@@ -40,12 +30,12 @@ class ActicleItem extends Component {
                                     <span>
                                         {items.author}
                                     </span>
-                                    <span>
+                                    <span className={acticleItemStyle.time}>
                                         {items.time}
                                     </span>
                                 </div>
                                 <div className={acticleItemStyle.acticleCnt}>
-                                    {items.cnt}
+                                    {items.summary}
                                 </div>
                                 <a href="" className={acticleItemStyle.moreCnt}>
                                     查看详情

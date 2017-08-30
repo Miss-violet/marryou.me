@@ -20,13 +20,17 @@ var data = Mock.mock({
                 'imgUrl': '@url',
                 'readNo|1-1000': 1,
                 'summary': '@paragraph(2)',
-                'time': '@datetime',
+                'time': '@date',
                 'title': '@cword(3,10)',
             }
         ],
         'sortType|1-2': true,
-        'Mr_imgUrl': '@url',
-        'Mrs_imgUrl': '@url',
+        'authorList':
+        {
+            'Mr_imgUrl': '@url',
+            'Mrs_imgUrl': '@url',
+        }
+
     }
 })
 // 输出结果

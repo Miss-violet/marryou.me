@@ -10,6 +10,8 @@ import Author from './author'
 /* mock数据 */
 import indexData from '../../mock/index.js'
 const tagList = indexData.data.tagList
+const acticleList = indexData.data.acticleList
+const authorList = indexData.data.authorList
 
 class Index extends Component {
   render() {
@@ -18,8 +20,8 @@ class Index extends Component {
         <Logo />
         <div className={styles.indexWrap}>
           <Tag {...tagList} />
-          <Acticle />
-          <Author />
+          <Acticle {...acticleList} />
+          <Author {...authorList} />
         </div>
       </div>
     );
