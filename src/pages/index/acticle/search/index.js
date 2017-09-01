@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
 
 import searchStyles from './index.css'
-// import classnames from 'classnames'
+import iconFont from '../../../../assets/styles/iconfont/style.css'
+import classnames from 'classnames'
 
 class Search extends Component {
     render() {
+        const iconSearch = classnames({
+            [iconFont.icon_search]: true,
+            [searchStyles.iconSearch]: true,
+        })
         return (
             <div className={searchStyles.searchWrap}>
-                <input className={searchStyles.searchInput} placeholder="搜索文章" />
+                <input type="text" placeholder="搜索文章" />
+                <div className={iconSearch}>
+                </div>
             </div>
         )
     }

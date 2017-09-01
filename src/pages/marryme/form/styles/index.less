@@ -1,0 +1,81 @@
+@import '../../../../assets/styles/grid.less';
+.wrap {
+    position: relative;
+}
+
+.formWrap {
+    .col-12;
+    background-color: #f8f8f6;
+    display: flex;
+    height: 224px;
+    .timeWrap {
+        .col-6;
+        background-color: #ededeb;
+        border-right: 1px solid #e6e6e3;
+        color: #bfbfbd;
+        font-family: '方正姚体', 'Microsoft YaHei';
+        font-size: 36px;
+        text-align: center;
+        .date {
+            @size: 87px;
+            background: url('../img/date.png') no-repeat 0 0;
+            height: @size;
+            margin: 47px auto 21px;
+            overflow: hidden;
+            text-indent: 110%;
+            width: @size;
+        }
+    }
+    .form {
+        margin-top: 21px;
+        width: 100%;
+        .title {
+            margin-left: 10%;
+            margin-top: 7px;
+        }
+        .fmItem {
+            margin-top: 15px;
+            margin-left: 10%;
+        }
+        .label {
+            .col-5;
+            display: inline-block;
+            font-size: 14px;
+            text-align: right;
+            &:after {
+                content: '：';
+            }
+        }
+    }
+    .fmBtn {
+        background-color: #f2f2f0;
+        height: 55px;
+        margin-top: 15px;
+        .submitBtn {
+            @height: 30px;
+            background: none;
+            border: 1px solid #ad2b50;
+            color: #ad2b50;
+            cursor: pointer;
+            font-size: 14px;
+            height: @height;
+            line-height: @height;
+            margin-left: 29%;
+            margin-top: 12px;
+            text-align: center;
+            transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+            width: 216px;
+            &:hover {
+                background-color: #ad2b50;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.idPhoto {
+    position: absolute;
+    right: 4.166667%;
+    top: 0;
+    z-index: 2;
+}

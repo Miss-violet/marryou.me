@@ -1,0 +1,159 @@
+.toolsWrap {
+    position: fixed;
+    bottom: 100px;
+    left: 83.333333%;
+    .icon {
+        @size: 46px;
+        border: 1px solid #ededeb;
+        cursor: pointer;
+        height: @size;
+        margin-bottom: 30px;
+        position: relative;
+        width: @size;
+        .showCircle {
+            @size: 8px;
+            background-color: #ededeb;
+            border-radius: 5px;
+            display: inline-block;
+            height: @size;
+            width: @size;
+            &:before {
+                border-bottom: 2px solid #ededeb;
+                content: '';
+                margin-top: 3px;
+                right: 10px;
+                position: absolute;
+                width: 18px;
+            }
+        }
+        .editIcon,
+        .menuIcon,
+        .topIcon {
+            line-height: 46px;
+            text-align: center;
+            &:hover:before {
+                color: #ad2b50;
+            }
+        }
+        .editIcon {
+            font-size: 28px;
+        }
+        .menuIcon {
+            font-size: 20px;
+        }
+        .topIcon {
+            font-size: 16px;
+        }
+    }
+    .showFm,
+    .showMenu {
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+    }
+    .showFm {
+        right: 46px;
+        top: 13px;
+        .showCircle {
+            margin-top: 3%;
+        }
+    }
+    .editFm {
+        background-color: #f2f2f0;
+        height: 189px;
+        margin-right: 26px;
+        margin-top: -77px;
+        width: 322px;
+        &:after {
+            height: 189px;
+            right: 33px;
+            top: -77px;
+        }
+        .title {
+            margin: 12px 0 3px 84px;
+        }
+        .fmItem {
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        .label {
+            display: inline-block;
+            text-align: right;
+            width: 69px;
+            &:after {
+                content: '：';
+            }
+        }
+        .submitBtn {
+            @height: 30px;
+            background: none;
+            border: 1px solid #ad2b50;
+            color: #ad2b50;
+            cursor: pointer;
+            font-size: 12px;
+            height: @height;
+            line-height: @height;
+            margin-left: 26%;
+            margin-top: 15px;
+            text-align: center;
+            transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+            width: 216px;
+            &:hover {
+                background-color: #ad2b50;
+                color: #fff;
+            }
+        }
+    }
+    .showMenu {
+        left: -100px;
+        top: -68px;
+        .showCircle {
+            margin-top: 88%;
+        }
+    }
+    .editFm,
+    .menuItems {
+        &:after {
+            border-right: 2px solid #ededeb;
+            content: '';
+            position: absolute;
+        }
+    }
+    .menuItems {
+        margin-right: 20px;
+        padding-right: 10px;
+        &:after {
+            height: 80%;
+            right: 30px;
+            top: 18px;
+        }
+        .menuItem {
+            @height: 44px;
+            display: flex;
+            flex-direction: row-reverse;
+            height: @height;
+            line-height: @height;
+            text-align: right;
+            &:hover {
+                color: #ad2b50;
+                text-decoration: underline;
+            }
+        }
+        .itemCircle {
+            @size: 8px;
+            background-color: #ccccca;
+            border-radius: 5px;
+            display: inline-block;
+            height: @size;
+            margin-left: 4px;
+            margin-top: 32%;
+            width: @size;
+        }
+        .crtItem {
+            color: #ad2b50;
+            .itemCircle {
+                background-color: #ad2b50;
+            }
+        }
+    }
+}

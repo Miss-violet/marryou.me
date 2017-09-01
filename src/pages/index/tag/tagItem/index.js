@@ -4,16 +4,11 @@ import tagStyles from '../index.css'
 
 class TagList extends Component {
     render() {
-        const tag = [
-            {
-                classify: '后端相关',
-                tags: ['HTML', 'CSS']
-            },
-            {
-                classify: '前端相关',
-                tags: ['HTML', 'CSS']
-            }
-        ]
+        let tagProps = this.props,      /* 对象，无法直接使用map遍历 */
+            tag = []
+        for (let i in tagProps) {
+            tag.push(tagProps[i])
+        }
         return (
             <div>
                 {

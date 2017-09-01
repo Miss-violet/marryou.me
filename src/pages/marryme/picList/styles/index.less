@@ -1,0 +1,78 @@
+@import '../../../../assets/styles/grid.less';
+.picWrap {
+    .col-23;
+    position: relative;
+}
+
+.axis {
+    .col-2;
+    background-color: #f8f8f6;
+    height: 100%;
+    left: 45.5%;
+    min-height: 1200px;
+    position: absolute;
+    top: -55px;
+    &:after {
+        content: '';
+        border-right: 1px solid #ededeb;
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        width: 1px;
+    }
+    .moreIcon {
+        background-color: #f8f8f6;
+        font-size: 18px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        padding-left: 12px;
+        position: relative;
+        z-index: 1;
+    }
+    .more {
+        background-color: #ededeb;
+        border-top: 1px solid #e6e6e3;
+        bottom: -100px;
+        cursor: pointer;
+        font-size: 14px;
+        height: 100px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        &:hover {
+            color: #ad2b50;
+        }
+        .moreIcon {
+            background: none;
+            margin-top: 10px;
+            padding-left: 0;
+        }
+    }
+}
+
+.picList {
+    li {
+        .col-11;
+        background-color: #f8f8f6;
+        margin-top: 40px;
+        max-width: 47%;
+        padding-top: 20px;
+        position: relative;
+        &:nth-child(2n+1) {
+            float: left;
+            overflow: hidden;
+            .pic {
+                float: right;
+            }
+        }
+        &:nth-child(2n) {
+            float: right;
+            top: 162px;
+        }
+    }
+    .pic {
+        max-width: 483px;
+    }
+}

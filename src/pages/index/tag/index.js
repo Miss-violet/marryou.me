@@ -8,18 +8,16 @@ import tagStyles from './index.css'
 
 class Tag extends Component {
     render() {
-
         const tagWrap = classnames({
             [styles.tagWrap]: true,
             [tagStyles.tagWrap]: true
         })
-
         return (
             <div className={tagWrap}>
                 <div className={styles.title}>
                     标签
                 </div>
-                <TagItem />
+                <TagItem {...this.props} />
             </div>
         )
     }
