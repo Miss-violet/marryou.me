@@ -4,23 +4,60 @@
     position: relative;
 }
 
-.axis {
-    .col-2;
-    background-color: #f8f8f6;
-    height: 100%;
-    left: 45.5%;
-    min-height: 1200px;
-    position: absolute;
-    top: -55px;
+.picList {
+    padding-bottom: 150px;
     &:after {
-        content: '';
-        border-right: 1px solid #ededeb;
-        height: 100%;
-        left: 50%;
-        position: absolute;
-        top: 0;
-        width: 1px;
+        content: "";
+        height: 0;
+        visibility: hidden;
+        display: block;
+        clear: both;
     }
+    .axis {
+        .col-2;
+        background-color: #f8f8f6;
+        height: 100%;
+        left: 45.5%;
+        margin-top: 0;
+        min-height: 1200px;
+        padding-top: 0;
+        position: absolute;
+        top: -55px;
+        &:after {
+            content: '';
+            border-right: 1px solid #ededeb;
+            height: 100%;
+            left: 50%;
+            position: absolute;
+            top: 0;
+            width: 1px;
+        }
+    }
+    li {
+        .col-11;
+        background-color: #f8f8f6;
+        margin-top: 40px;
+        max-width: 47%;
+        padding-top: 20px;
+        &:nth-child(2n+1) {
+            float: left;
+            overflow: hidden;
+            .pic {
+                float: right;
+            }
+        }
+        &:nth-child(2n) {
+            float: right;
+            position: relative;
+            top: 162px;
+        }
+    }
+    .pic {
+        max-width: 483px;
+    }
+}
+
+.axis {
     .moreIcon {
         background-color: #f8f8f6;
         font-size: 18px;
@@ -34,7 +71,7 @@
     .more {
         background-color: #ededeb;
         border-top: 1px solid #e6e6e3;
-        bottom: -100px;
+        bottom: 0px;
         cursor: pointer;
         font-size: 14px;
         height: 100px;
@@ -49,30 +86,5 @@
             margin-top: 10px;
             padding-left: 0;
         }
-    }
-}
-
-.picList {
-    li {
-        .col-11;
-        background-color: #f8f8f6;
-        margin-top: 40px;
-        max-width: 47%;
-        padding-top: 20px;
-        position: relative;
-        &:nth-child(2n+1) {
-            float: left;
-            overflow: hidden;
-            .pic {
-                float: right;
-            }
-        }
-        &:nth-child(2n) {
-            float: right;
-            top: 162px;
-        }
-    }
-    .pic {
-        max-width: 483px;
     }
 }
